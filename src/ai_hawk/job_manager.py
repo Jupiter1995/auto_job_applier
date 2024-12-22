@@ -256,7 +256,7 @@ class AIHawkJobManager:
             return job_list_elements
 
         except NoSuchElementException:
-            logger.debug("No job results found on the page.")
+            logger.debug("Web class name may not correct or no job results found on the page.")
             return []
 
         except Exception as e:
